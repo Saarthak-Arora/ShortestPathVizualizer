@@ -55,7 +55,7 @@ let dijkstra = ()=>{
     parent[StartPoint[0]][StartPoint[1]] = [StartPoint[0],StartPoint[1]];
     configwall = false;
     Dijkstra();
-    // console.log(parent);
+    console.log(parent);
 }
 
 let stPoint = document.getElementById('stPoint');
