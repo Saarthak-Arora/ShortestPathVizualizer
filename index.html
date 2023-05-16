@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">     
+</head>
+<body>
+    <div><h1>Visualize And Analyze the Shortest Path and find the Quickest Way</h1></div>
+    <div class="container">
+        <div class="left">
+            <ul>
+                <li><button id="cst" onclick="addStartPoint()">Choose Starting Point <span class='ccode gr'></span></button></li>
+                <li><button id="cet" onclick="addEndPoint()">Choose Ending Point <span class='ccode rd'></span></button></li>
+                <li><button id="cwl" onclick="addWall()">Choose Wall Point if Any <span class='ccode bl'></span></button></li>
+                <li><button id="djst" onclick="dijkstra()">Start Dijkstra</button></li>
+                <li><button id="djst" onclick="reset()">Clear Board</button></li>
+            </ul>
+            <div>
+                <h3>Way To Use</h3>
+                <ol>
+                    <li>Click on the above 3 buttons to set the nodes in any order and click on board to set the buttons instruction</li>
+                    <li>Click on the 4th button to simulate</li>
+                    <li>Reading will be shown below the board</li>
+                    <li>Click on the 5th button to start with new <b>but but but</b> Now the work become more easy
+                        <ol>
+                            <li>No need to repeat the above steps</li>
+                            <li>Just click on the board to set Starting, ending and wall cells and the cell gets its designation in the same order and then click 4th button to simulate</li>
+                            
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="right">
+            <table id="board"></table>
+            <div class="Coordinates">
+                <div id="stPoint"></div>
+                <div id="etPoint"></div>
+                <div id="wtPoint"></div>
+                <div id="ptPoint"></div>
+            </div>
+        </div>
+        
+    </div>
+
+   
+    <script src="index.js"></script>
+    <script src="Dijkstra.js"></script>
+</body>
+</html>

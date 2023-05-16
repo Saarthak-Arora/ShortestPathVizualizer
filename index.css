@@ -1,0 +1,72 @@
+.container{
+    position: relative;
+    margin: auto;
+    display: flex;
+    height:600px;
+    width: 80vw;
+    /* background-color: yellow; */
+    
+}
+
+/* .left{} */
+    
+.left ul{
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */  
+}
+
+table, th, td {
+    border:1px solid black;
+    height:15px;
+    width: 1000px;
+    border-collapse: collapse;
+}
+
+.addAnimation{
+    transition: 4s;
+    background-color: indigo;
+    background-color: skyblue;
+}
+
+.detectP{
+    transition: 4s;
+    background-color: yellow;
+}
+
+button{
+    margin: 2px;
+    background-color: orange;
+    width: 200px;
+    transition: 1s;
+    cursor: pointer;
+    border: 0;
+}
+
+button:hover{
+    box-shadow: 2px 4px gray;
+}
+
+.Coordinates{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ccode{
+    margin-left: 4px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+}
+
+.gr{
+    background-color: green;
+}
+
+.rd{
+    background-color: red;
+}
+
+.bl{
+    background-color: black;
+}
