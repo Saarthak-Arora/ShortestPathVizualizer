@@ -15,13 +15,15 @@ let findShotestPath = ()=>{
     let r = EndPoint[0];
     let c = EndPoint[1];
     while(true){
-        r = parent[r][c][0];
-        c = parent[r][c][1];
-        if(r == StartPoint[0] && c == StartPoint[1]){
+        let r1 = parent[r][c][0];
+        let c1 = parent[r][c][1];
+        if(r1 == StartPoint[0] && c1 == StartPoint[1]){
             break;
         }
-        ptPoint.innerHTML += `row : ${r+1} , col : ${c+1} <br>`;
-        detectPath(r,c)
+        ptPoint.innerHTML += `row : ${r1+1} , col : ${c1+1} <br>`;
+        detectPath(r1,c1)
+        r = r1;
+        c = c1;
     }
 }
 
